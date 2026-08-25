@@ -74,19 +74,19 @@
 
   /* ejecutivos */
   .rows{display:flex;flex-direction:column;gap:1.4vh;margin-top:.4vh;}
-  .rhead{display:grid;grid-template-columns:1fr 15vw 26vw 13vw;align-items:center;border:1px solid transparent;
-    padding:0 2.2vw 1.2vh;font-size:1.7vh;color:var(--faint);text-transform:uppercase;letter-spacing:.12em;font-weight:600;}
+  .rhead{display:grid;grid-template-columns:1fr 17vw 24vw 13vw;align-items:center;border:1px solid transparent;
+    padding:0 2.2vw 1.2vh;font-size:2.2vh;color:var(--faint);text-transform:uppercase;letter-spacing:.12em;font-weight:600;}
   .rhead div:nth-child(2){text-align:right;}
   .rhead div:nth-child(3){text-align:center;}
   .rhead div:nth-child(4){text-align:right;}
-  .row{display:grid;grid-template-columns:1fr 15vw 26vw 13vw;align-items:center;
+  .row{display:grid;grid-template-columns:1fr 17vw 24vw 13vw;align-items:center;
     background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:4.4vh 2.2vw;}
-  .row .who{font-size:3.4vh;font-weight:600;}
-  .row .nums{font-size:3.8vh;font-weight:700;text-align:right;}
-  .row .nums span{color:var(--faint);font-weight:400;font-size:2.8vh;}
-  .row .bar{height:1.1vh;background:#2a2e35;border-radius:2px;margin:0 2vw;overflow:hidden;}
+  .row .who{font-size:4.8vh;font-weight:700;}
+  .row .nums{font-size:5.2vh;font-weight:700;text-align:right;}
+  .row .nums span{color:var(--faint);font-weight:400;font-size:3.6vh;}
+  .row .bar{height:1.4vh;background:#2a2e35;border-radius:2px;margin:0 2vw;overflow:hidden;}
   .row .bar i{display:block;height:100%;border-radius:2px;}
-  .row .gap{font-size:2.2vh;text-align:right;color:var(--dim);font-weight:600;}
+  .row .gap{font-size:3.2vh;text-align:right;color:var(--dim);font-weight:700;}
 
   /* chart */
   .chart{flex:1;display:flex;align-items:flex-end;gap:.6vw;min-height:0;padding-top:4vh;}
@@ -95,8 +95,8 @@
   .col .b{flex:1;border-radius:2px 2px 0 0;position:relative;min-height:2px;}
   .col .b em{position:absolute;top:-2.6vh;left:50%;transform:translateX(-50%);font-size:1.8vh;font-style:normal;color:var(--dim);font-weight:600;}
   .col .d{text-align:center;font-size:1.9vh;color:var(--faint);margin-top:1.2vh;font-weight:600;}
-  .lgd{display:flex;gap:2.6vw;justify-content:center;margin-top:2.4vh;font-size:2vh;color:var(--dim);font-weight:600;}
-  .lgd i{display:inline-block;width:1.5vh;height:1.5vh;border-radius:2px;margin-right:.7vh;vertical-align:middle;}
+  .lgd{display:flex;gap:3.2vw;justify-content:center;margin-top:2.4vh;font-size:3.4vh;color:var(--dim);font-weight:700;}
+  .lgd i{display:inline-block;width:2.4vh;height:2.4vh;border-radius:3px;margin-right:1vh;vertical-align:middle;}
 
   /* ---- INVICTUS · gauge ---- */
   /* padding-bottom compensa que el numero grande y las metricas cuelgan por
@@ -121,31 +121,29 @@
   .brand .bp{font-size:12vh;font-weight:700;line-height:1;margin:1.4vh 0;}
   .thin{height:.9vh;background:var(--panel2);border-radius:2px;overflow:hidden;}
   .thin i{display:block;height:100%;border-radius:2px;}
-  .brand .bd{display:flex;justify-content:space-between;font-size:2vh;color:var(--dim);margin-top:1.2vh;font-weight:600;}
+  .brand .bd{display:flex;justify-content:space-between;font-size:3vh;color:var(--dim);margin-top:1.6vh;font-weight:700;}
 
   /* ---- INVICTUS · barras ejecutivos ---- */
-  .pb-list{display:flex;flex-direction:column;gap:2.2vh;width:70vw;margin:0 auto;}
-  .pb{display:grid;grid-template-columns:16vw 1fr 9vw;align-items:center;gap:1.6vw;}
-  .pb .n{font-size:2.8vh;font-weight:600;}
-  .pb .n small{display:block;font-size:1.5vh;color:var(--faint);text-transform:uppercase;letter-spacing:.12em;font-weight:600;}
-  .pb .track{height:3.4vh;background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden;position:relative;}
+  .pb-list{display:flex;flex-direction:column;gap:3vh;width:78vw;margin:0 auto;}
+  .pb{display:grid;grid-template-columns:22vw 1fr 12vw;align-items:center;gap:1.6vw;}
+  .pb .n{font-size:4.2vh;font-weight:700;}
+  .pb .n small{display:block;font-size:2.2vh;color:var(--faint);text-transform:uppercase;letter-spacing:.12em;font-weight:700;}
+  .pb .track{height:4.8vh;background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden;position:relative;}
   .pb .track i{display:block;height:100%;border-radius:5px 0 0 5px;}
-  .pb .track em{position:absolute;right:1vw;top:50%;transform:translateY(-50%);font-style:normal;font-size:1.9vh;color:var(--dim);}
-  .pb .pc{font-size:3.4vh;font-weight:700;text-align:right;}
+  .pb .track em{position:absolute;right:1vw;top:50%;transform:translateY(-50%);font-style:normal;font-size:3vh;color:var(--dim);font-weight:700;}
+  .pb .pc{font-size:4.8vh;font-weight:700;text-align:right;}
 
   /* ---- INVICTUS · podio ---- */
-  .podio{flex:1;display:flex;align-items:flex-end;justify-content:center;gap:2.6vw;padding-bottom:2vh;}
-  .step{width:19vw;text-align:center;display:flex;flex-direction:column;justify-content:flex-end;}
-  .step .medal{font-size:6.4vh;}
-  .step .pn{font-size:4.6vh;font-weight:700;margin:.8vh 0 .3vh;line-height:1.05;}
-  .step .pm{font-size:2.1vh;color:var(--faint);text-transform:uppercase;letter-spacing:.12em;}
-  .step .pv{font-size:5.2vh;font-weight:700;margin:1vh 0 1.4vh;}
+  /* Sin 4to-6to puesto: el podio ahora ocupa la pantalla y va mas grande. */
+  .podio{flex:1;display:flex;align-items:flex-end;justify-content:center;gap:2.6vw;padding-bottom:5vh;}
+  .step{width:21vw;text-align:center;display:flex;flex-direction:column;justify-content:flex-end;}
+  .step .medal{font-size:8vh;}
+  .step .pn{font-size:5.4vh;font-weight:700;margin:.8vh 0 .3vh;line-height:1.05;}
+  .step .pm{font-size:2.6vh;color:var(--faint);text-transform:uppercase;letter-spacing:.12em;}
+  .step .pv{font-size:7.6vh;font-weight:700;margin:1vh 0 1.4vh;}
   .step .block{border-radius:8px 8px 0 0;border:1px solid var(--line);border-bottom:none;
-    display:flex;align-items:center;justify-content:center;font-size:7vh;font-weight:700;color:rgba(0,0,0,.35);}
-  .others{display:flex;justify-content:center;gap:2.4vw;padding:0 3.4vw 3.4vh;}
-  .oth{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:1.4vh 1.8vw;font-size:2.6vh;color:var(--dim);}
-  .oth b{color:var(--txt);margin-right:.6vw;}
-  .oth span{font-weight:700;}
+    display:flex;align-items:center;justify-content:center;font-size:8.4vh;font-weight:700;color:rgba(0,0,0,.35);}
+  .others{display:none;}
 
   /* controles */
   #fs{position:fixed;bottom:2vh;right:1.6vw;z-index:99;
@@ -241,29 +239,29 @@
   .nl-split .vv{font-size:4.4vh;font-weight:800;margin-top:.4vh;}
 
   /* lista de barras */
-  .nl-bars{display:flex;flex-direction:column;gap:1.8vh;flex:1;justify-content:center;}
-  .nl-bar{display:grid;grid-template-columns:15vw 1fr 11vw;align-items:center;gap:1.4vw;}
-  .nl-bar .n{font-size:2.3vh;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-  .nl-bar .n small{display:block;font-size:1.5vh;color:var(--nl-muted);font-weight:600;text-transform:uppercase;letter-spacing:.1em;}
-    .nl-bar .tr{height:var(--barh,4.2vh);background:var(--nl-card);border:1px solid var(--nl-line);border-radius:6px;position:relative;overflow:hidden;}
+  .nl-bars{display:flex;flex-direction:column;gap:2.4vh;flex:1;justify-content:center;}
+  .nl-bar{display:grid;grid-template-columns:20vw 1fr 12vw;align-items:center;gap:1.4vw;}
+  .nl-bar .n{font-size:4vh;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .nl-bar .n small{display:block;font-size:2vh;color:var(--nl-muted);font-weight:600;text-transform:uppercase;letter-spacing:.1em;}
+    .nl-bar .tr{height:var(--barh,6vh);background:var(--nl-card);border:1px solid var(--nl-line);border-radius:8px;position:relative;overflow:hidden;}
   .nl-bar .tr i{display:block;height:100%;background:var(--nl-accent);}
   .nl-bar .tr em{position:absolute;right:.6vw;top:50%;transform:translateY(-50%);font-style:normal;
-    font-size:1.8vh;color:var(--nl-slate);font-weight:600;
-    /* pastilla: la etiqueta tiene que leerse tanto sobre el relleno de color
-       como sobre el fondo vacio de la barra */
-    background:var(--nl-card);padding:.35vh .7vw;border-radius:99px;
+    font-size:2.4vh;color:var(--nl-slate);font-weight:700;
+    background:var(--nl-card);padding:.5vh .9vw;border-radius:99px;
     box-shadow:0 0 0 1px var(--nl-line);}
   .nl-bar .tr b.mark{position:absolute;top:0;bottom:0;width:2px;background:var(--nl-ink);opacity:.45;}
-  .nl-bar .v{font-size:2.8vh;font-weight:800;text-align:right;}
+  .nl-bar .v{font-size:4.4vh;font-weight:800;text-align:right;}
 
   /* tabla compacta */
-  .nl-tbl{width:100%;border-collapse:collapse;flex:1;}
-  .nl-tbl th{font-size:1.6vh;text-transform:uppercase;letter-spacing:.12em;color:var(--nl-muted);
-    font-weight:700;text-align:right;padding:0 1vw 1.2vh;border-bottom:2px solid var(--nl-line);}
+  .nl-tbl{width:100%;border-collapse:collapse;flex:1;margin-top:1.6vh;}
+  .nl-tbl th{font-size:2vh;text-transform:uppercase;letter-spacing:.12em;color:var(--nl-muted);
+    font-weight:700;text-align:right;padding:0 1vw 1.4vh;border-bottom:2px solid var(--nl-line);}
   .nl-tbl th:first-child{text-align:left;}
-  .nl-tbl td{font-size:2.2vh;font-weight:600;text-align:right;padding:1.25vh 1vw;border-bottom:1px solid var(--nl-line);}
+  .nl-tbl td{font-size:2.8vh;font-weight:600;text-align:right;padding:1.6vh 1vw;border-bottom:1px solid var(--nl-line);}
   .nl-tbl td:first-child{text-align:left;font-weight:700;white-space:nowrap;overflow:hidden;
     text-overflow:ellipsis;max-width:26vw;}
+  .nl-tbl td.ejec{font-size:3.2vh;font-weight:800;color:var(--nl-accent-dk);}
+  .nl-tbl td.rk{text-align:center;font-size:3vh;font-weight:800;color:var(--nl-muted);width:4vw;}
   .nl-tbl td.num{font-variant-numeric:tabular-nums;}
   .nl-tbl tr:last-child td{border-bottom:none;}
   .nl-tbl .pill{display:inline-block;min-width:5.6vw;padding:.35vh .7vw;border-radius:99px;
@@ -294,6 +292,30 @@
     padding:2.6vh 2vw;font-size:2.6vh;color:var(--nl-ink);font-weight:600;line-height:1.5;
     display:flex;align-items:center;}
   .nl-note b{color:var(--nl-accent-dk);font-weight:800;}
+
+  /* ---- podio de reconocimiento (HD / Sunset) ----
+     Oro / plata / bronce sobre papel claro. Reutiliza la logica del podio de
+     Invictus pero con la estetica de newsletter: bloques con el color de la
+     medalla, nombre del cliente grande y el ejecutivo debajo, que es a quien se
+     reconoce. El subtitulo y el valor (Net Sales) los pone cada slide. */
+  .nl-podio{flex:1;display:flex;align-items:flex-end;justify-content:center;gap:2.6vw;padding-bottom:2vh;}
+  .nl-step{width:24vw;text-align:center;display:flex;flex-direction:column;justify-content:flex-end;}
+  .nl-step .medal{font-size:7.6vh;line-height:1;}
+  .nl-step .pn{font-size:4vh;font-weight:800;margin:.8vh 0 .2vh;line-height:1.05;letter-spacing:-.01em;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .nl-step .pe{font-size:3.8vh;color:var(--nl-accent-dk);font-weight:800;}
+  .nl-step .pe small{display:block;font-size:1.6vh;color:var(--nl-muted);text-transform:uppercase;
+    letter-spacing:.12em;font-weight:700;margin-bottom:.2vh;}
+  .nl-step .pv{font-size:5.6vh;font-weight:800;margin:1vh 0 1.4vh;letter-spacing:-.02em;}
+  .nl-step .block{border-radius:10px 10px 0 0;
+    display:flex;align-items:center;justify-content:center;font-size:8vh;font-weight:800;color:rgba(255,255,255,.9);}
+  /* medallas: oro / plata / bronce */
+  .nl-gold  .block{background:linear-gradient(180deg,#E8B923,#C9971A);}
+  .nl-gold  .pv{color:#B8860B;}
+  .nl-silver .block{background:linear-gradient(180deg,#AEB4BC,#8A9099);}
+  .nl-silver .pv{color:#7A828C;}
+  .nl-bronze .block{background:linear-gradient(180deg,#C88A54,#A56B39);}
+  .nl-bronze .pv{color:#9C6432;}
 
 </style>
 </head>
@@ -520,11 +542,14 @@ function renderBrands(){
 }
 
 function renderEjec(){
+  const medalCols = ['#D4AF37','#9EA3AB','#B08D57']; // oro, plata, bronce
+  const medals = ['🥇','🥈','🥉'];
   const list = [...AGO_EJEC].map(e=>({...e,pct:e.real/e.obj*100})).sort((a,b)=>b.pct-a.pct);
-  document.getElementById('pblist').innerHTML = list.map(e=>{
-    const col = colPace(e.pct);
+  document.getElementById('pblist').innerHTML = list.map((e,idx)=>{
+    const col = idx<3 ? medalCols[idx] : colPace(e.pct);
+    const medal = idx<3 ? `<span style="font-size:3.6vh;margin-right:.6vw">${medals[idx]}</span>` : '';
     return `<div class="pb">
-      <div class="n">${e.name}<small>${e.marca}</small></div>
+      <div class="n">${medal}${e.name}<small>${e.marca}</small></div>
       <div class="track"><i style="width:${Math.min(100,e.pct)}%;background:${col}"></i>
         <em>${fmtK(e.real)} / ${fmtK(e.obj)} K USD</em></div>
       <div class="pc" style="color:${col}">${e.pct.toFixed(0)}%</div>
@@ -534,8 +559,8 @@ function renderEjec(){
 
 function renderPodio(){
   const medals = ['🥇','🥈','🥉'];
-  const hts = ['31vh','23vh','17vh'];   // altura de los bloques del podio
-  const cols = ['var(--good)','#8fd14f','#2f7a52'];
+  const hts = ['36vh','27vh','20vh'];
+  const cols = ['#D4AF37','#9EA3AB','#B08D57']; // oro, plata, bronce
   const order = [1,0,2];
   const top3 = RANK_JUL.slice(0,3);
   document.getElementById('podio').innerHTML = order.map(i=>{
@@ -549,10 +574,9 @@ function renderPodio(){
       <div class="block" style="height:${hts[i]};background:${cols[i]}">${i+1}</div>
     </div>`;
   }).join('');
-  document.getElementById('others').innerHTML = RANK_JUL.slice(3).map((p,j)=>{
-    const sign = p.pct>=0?'+':'';
-    return `<div class="oth"><b>${j+4}° ${p.name}</b><span style="color:${p.pct>=0?'var(--good)':'var(--bad)'}">${sign}${p.pct.toFixed(1)}%</span></div>`;
-  }).join('');
+  // 4to, 5to y 6to puesto eliminados para esta version de mayor impacto.
+  const others = document.getElementById('others');
+  if(others) others.innerHTML = '';
 }
 
 
@@ -619,7 +643,10 @@ function bars(l){
 
 function tabla(cols, filas){
   return `<table class="nl-tbl"><thead><tr>${cols.map(c=>`<th>${c}</th>`).join('')}</tr></thead>
-    <tbody>${filas.map(f=>`<tr>${f.map((c,i)=>`<td class="${i?'num':''}">${c}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+    <tbody>${filas.map(f=>`<tr>${f.map((c,i)=>{
+      if(typeof c==='string' && c.startsWith('<td')) return c;
+      return `<td class="${i?'num':''}">${c}</td>`;
+    }).join('')}</tr>`).join('')}</tbody></table>`;
 }
 
 /* Dos series por mes: objetivo en gris, real en color.
@@ -658,381 +685,95 @@ function cover(big, sub){
     <div class="big">${big}</div><div class="rule"></div><div class="sub">${sub}</div></div>`;
 }
 
+/* Podio de reconocimiento oro/plata/bronce sobre papel claro.
+   `items` es un array de 3 objetos {nombre, ejec, valor}. El nombre es el
+   cliente/cuenta; el ejec es a quien se reconoce; el valor es el numero grande
+   (ya formateado). Orden visual 2do-1ro-3ro, como el podio de Invictus. */
+function podioNL(items){
+  const medals = ['🥇','🥈','🥉'];
+  const cls    = ['nl-gold','nl-silver','nl-bronze'];
+  const hts    = ['34vh','25vh','18vh'];
+  const order  = [1,0,2];
+  const steps = order.map(i=>{
+    const it = items[i]; if(!it) return '';
+    return `<div class="nl-step ${cls[i]}">
+      <div class="medal">${medals[i]}</div>
+      <div class="pn">${it.nombre}</div>
+      <div class="pe"><small>Ejecutivo</small>${it.ejec||'—'}</div>
+      <div class="pv">${it.valor}</div>
+      <div class="block" style="height:${hts[i]}">${i+1}</div>
+    </div>`;
+  }).join('');
+  return `<div class="nl-podio">${steps}</div>`;
+}
+
 /* ---------- capitulo 3 · Hunter Douglas ---------- */
 function slidesHD(){
   const D = DATA.hd || {}, S = [];
-  const ex = D.exec || {}, mc = ex.mes_cards || {}, yc = ex.ytg_cards || {};
-  const ritmoTxt = `día hábil ${M.dia_habil} de ${M.dias_habiles} · ${Math.round(RITMO*100)}% del mes`;
   const push = (t,s,body,foot)=>S.push({t,s,body,foot});
+  const t20 = D.top20 || [];
 
-  push('', '', cover('Hunter Douglas', 'Seguimiento de marca · objetivo YTG y las cuatro familias del crecimiento'));
+  // 0 · portada
+  push('', '', cover('Hunter Douglas', 'Seguimiento de marca'));
 
-  // 1 · resumen del mes
+  // 1 · podio top 3 distribuidores del mes
   {
-    const t = mc.total||{}, r = mc.roller||{}, tl = mc.toldos||{}, tr = mc.trad||{};
-    push(`El mes de ${M.mes_nombre}`, `Pedidos ingresados al ${ex.asof||M.corte} · ${ritmoTxt}`,
-      cards([
-        card('Total marca', usd(t.act), `objetivo ${usd(t.obj)}`, pc(t.act,t.obj), nlPace(pc(t.act,t.obj))),
-        card('Roller', usd(r.act), `objetivo ${usd(r.obj)}`, pc(r.act,r.obj), nlPace(pc(r.act,r.obj))),
-        card('Toldos', `${nf(tl.act_u)} <small>u.</small>`, `objetivo ${nf(tl.obj_u)} u.`, pc(tl.act_u,tl.obj_u), nlPace(pc(tl.act_u,tl.obj_u))),
-        card('Tradicional', usd(tr.act), `objetivo ${usd(tr.obj)}`, pc(tr.act,tr.obj), nlPace(pc(tr.act,tr.obj))),
-      ],4), 'Fuente: order entry · USD brutos de pedido');
+    const top3 = t20.slice(0,3).map(c=>({nombre:c.name, ejec:c.ejec, valor:usd(c.usd)}));
+    if(top3.length) push(`Top clientes de ${M.mes_nombre}`, 'Net Sales facturado en el mes',
+      podioNL(top3), 'Fuente: cubo de ventas');
   }
 
-  // 2 · ritmo del mes
+  // 2 · top 10 con ejecutivo, m², net sales
   {
-    const t = mc.total||{}, p = pc(t.act,t.obj);
-    push('¿Vamos al ritmo del mes?', `${M.mes_nombre} · ${ritmoTxt}`,
-      hero(`${Math.round(p)}<small>%</small>`, 'del objetivo del mes, con el mes transcurrido en '+Math.round(RITMO*100)+'%',
-        [['Real',usd(t.act)],['Objetivo',usd(t.obj)],
-         ['Brecha', usd((t.obj||0)*RITMO-(t.act||0)), nlDelta((t.act||0)-(t.obj||0)*RITMO)]]),
-      'La brecha es contra el objetivo prorrateado a la fecha, no contra el mes completo');
-  }
-
-  // 3 · acumulado H2
-  {
-    const t = yc.total||{}, r = yc.roller||{}, tl = yc.toldos||{}, tr = yc.trad||{};
-    push('Acumulado del semestre', 'Julio a hoy contra el objetivo YTG completo',
-      cards([
-        card('Total marca', usd(t.act), `YTG ${usd(t.obj)}`, pc(t.act,t.obj)),
-        card('Roller', usd(r.act), `YTG ${usd(r.obj)}`, pc(r.act,r.obj)),
-        card('Toldos', `${nf(tl.act_u)} <small>u.</small>`, `YTG ${nf(tl.obj_u)} u.`, pc(tl.act_u,tl.obj_u)),
-        card('Tradicional', usd(tr.act), `YTG ${usd(tr.obj)}`, pc(tr.act,tr.obj)),
-      ],4));
-  }
-
-  // 4 · el objetivo YTG
-  {
-    const y = D.ytg||{}, tt = y.total||{};
-    push('El objetivo del semestre', 'Lo que hay que facturar de julio a diciembre',
-      hero(usd(tt.obj), 'de objetivo YTG para Hunter Douglas',
-        [['Base (ritmo actual)', usd(tt.base)],
-         ['Delta a buscar', usd(tt.delta), 'var(--nl-accent-dk)']]),
-      'Base = lo que sale de sostener el ritmo · Delta = el crecimiento que hay que construir');
-  }
-
-  // 5 · YTG por grupo
-  {
-    const rows = (D.ytg?.rows||[]).filter(r=>r.obj>0).sort((a,b)=>b.obj-a.obj).slice(0,9);
-    const max = Math.max(...rows.map(r=>r.obj))||1;
-    push('Objetivo YTG por familia', 'Cuánto pesa cada familia en el semestre',
-      bars(rows.map(r=>bar(r.name,null,r.obj/max*100,usd(r.base)+' base',usd(r.obj)))));
-  }
-
-  // 6 · delta por grupo
-  {
-    const rows = (D.ytg?.rows||[]).filter(r=>r.delta>500).sort((a,b)=>b.delta-a.delta);
-    const max = Math.max(...rows.map(r=>r.delta))||1;
-    push('Dónde está el crecimiento', 'Delta a construir sobre la base, por familia',
-      bars(rows.map(r=>bar(r.name,null,r.delta/max*100,`${(r.delta/(r.base||1)*100).toFixed(0)}% sobre base`,usd(r.delta),'var(--nl-accent-dk)'))),
-      'Cuatro familias explican casi todo el delta del semestre');
-  }
-
-  // 7 · las cuatro familias
-  {
-    const z = D.ytg_zoom||{}, ro=z.roller||{}, to=z.toldos||{}, pe=z.pergolas||{}, tra=z.tradicional||{};
-    push('Las cuatro familias del crecimiento', 'El delta del semestre se juega acá',
-      cards([
-        card('Roller', usd(ro.ytg), `delta ${usd(ro.delta)} sobre base`),
-        card('Toldos', `${nf(to.obj_units_total)} <small>u.</small>`, `delta ${usd(to.delta)} · ${nf(to.avg)} USD por unidad`),
-        card('Pérgolas', `${nf(pe.obj_units_total)} <small>u.</small>`, `delta ${usd(pe.delta)} · ${nf(pe.avg)} USD por unidad`),
-        card('Tradicional', usd(tra.ytg), `delta ${usd(tra.delta)} vía activación`),
-      ],4));
-  }
-
-  // 8 · roller mes a mes
-  {
-    const ro = D.ytg_zoom?.roller||{}, lab=(D.ytg?.labels)||['Jul','Ago','Sep','Oct','Nov','Dic'];
-    const obj = (ro.obj||[]).slice(6), act = (ro.act||[]).slice(6);
-    push('Roller · mes a mes', 'Objetivo mensual contra pedidos reales del semestre',
-      meses(lab, obj, act.length?act:lab.map(()=>null), usd, IDX_MES));
-  }
-
-  // 9 · toldos unidades
-  {
-    const to = D.ytg_zoom?.toldos||{}, lab=['Jul','Ago','Sep','Oct','Nov','Dic'];
-    const obj=(to.obj_units||[]).slice(6), act=(to.act_units||[]).slice(6);
-    push('Toldos · unidades por mes', `Objetivo ${nf(to.obj_units_total)} unidades en el semestre`,
-      meses(lab, obj, act, v=>nf(v)+' u.', IDX_MES),
-      'La curva de toldos es estacional: el peso está en octubre y noviembre');
-  }
-
-  // 10 · toldos cuentas con gap
-  {
-    const t = D.toldos_target||{}, rows=(t.rows||[]).slice(0,10);
-    push('Toldos · dónde están las unidades', `${nf(t.total_faltan)} unidades de brecha en ${nf(t.n)} cuentas contra su mejor año`,
-      tabla(['Distribuidor','2025','2026','Faltan'],
-        rows.map(r=>[r.name, nf(r.p25), nf(r.p26),
-          `<span class="pill ${r.faltan>0?'no':'ok'}">${nf(r.faltan)}</span>`])));
-  }
-
-  // 11 · pergolas
-  {
-    const pe = D.ytg_zoom?.pergolas||{}, lab=['Jul','Ago','Sep','Oct','Nov','Dic'];
-    push('Pérgolas · unidades por mes', `Objetivo ${nf(pe.obj_units_total)} unidades · ${nf(pe.avg)} USD promedio`,
-      meses(lab,(pe.obj_units||[]).slice(6),(pe.act_units||[]).slice(6),v=>nf(v)+' u.', IDX_MES),
-      'Pocas unidades, ticket alto: cada pérgola mueve la aguja');
-  }
-
-  // trackers de recuperacion
-  const trackers = [
-    ['roller_under','Roller · distribuidores a recuperar','GAP contra su mejor año (2024 o 2025)'],
-    ['outdoor_under','Outdoor · distribuidores a recuperar','Toldos, pérgolas y aluminio exterior'],
-    ['trad_under','Tradicional · distribuidores a recuperar','Objetivo anual por tipo de cuenta'],
-  ];
-  trackers.forEach(([k,t,s])=>{
-    const b = D[k]||{}, rows=(b.rows||[]).slice(0,8);
-    if(!rows.length) return;
-    push(t, s + ` · ${M.mes_nombre} al ${Math.round(RITMO*100)}%`,
-      tabla(['Distribuidor', k==='trad_under'?'Tipo':'Provincia', 'Obj. mes', M.mes_nombre.slice(0,3), 'Avance año'],
-        rows.map(r=>{
-          const av = r.avance||0;
-          const cl = av>=60?'ok':(av>=30?'nt':'no');
-          return [r.name, r.prov||r.tipo||'—', usd(r.obj_mes), usd(r.ago),
-                  `<span class="pill ${cl}">${nf(av)}%</span>`];
-        })),
-      'Avance año = real 2026 sobre el objetivo de recuperación de la cuenta');
-  });
-
-  // 16 · footprint
-  {
-    const fp = D.footprint||[];
-    if(fp.length) push('Footprint · distribuidores nuevos', 'Cuentas abiertas que todavía no compran Hunter Douglas',
-      tabla(['Cuenta','Región','HD USD','Pedidos'],
-        fp.slice(0,10).map(f=>[f.name, f.region, usd(f.hd_usd),
-          `<span class="pill ${f.hd_pedidos>0?'ok':'no'}">${nf(f.hd_pedidos)}</span>`])),
-      'Abrir la cuenta no alcanza: el footprint se mide en pedidos, no en altas');
-  }
-
-  // 17 · grupos YoY
-  {
-    const g = (D.grupo||[]).filter(x=>Math.abs(x.d)>1000).sort((a,b)=>b.dpct-a.dpct);
-    const max = Math.max(...g.map(x=>Math.abs(x.dpct)))||1;
-    if(g.length) push('Familias · variación interanual', 'Primer semestre 2026 contra 2025',
-      bars(g.map(x=>bar(x.grupo,null,Math.abs(x.dpct)/max*100,usd(x.b)+' en 2026',
-        sgn(x.dpct)+'%', x.dpct>=0?'var(--nl-good)':'var(--nl-bad)'))));
-  }
-
-  // 18 · top 20 clientes
-  {
-    const t20 = (D.top20||[]).slice(0,12);
-    if(t20.length) push(`Top clientes de ${M.mes_nombre}`, 'Net Sales facturado en el mes · fuente cubo de ventas',
-      tabla(['Cliente','Ejecutivo','m²','Net Sales','Share'],
-        t20.map(c=>[c.name, c.ejec, nf(c.m2), usd(c.usd), nf(c.share,1)+'%'])));
-  }
-
-  // 19 · cierre
-  {
-    const t = mc.total||{}, p = pc(t.act,t.obj);
-    push('El foco de esta semana', `${M.mes_nombre} · ${ritmoTxt}`,
-      `<div class="nl-two">
-        ${cards([card('Avance del mes', Math.round(p)+'%', `${usd(t.act)} de ${usd(t.obj)}`, p, nlPace(p))],1)}
-        ${nota('Tres palancas: cerrar las <b>unidades de toldos</b> que faltan contra 2025, mover las <b>cuentas a recuperar</b> de roller, y activar <b>tradicional</b> en las cuentas dormidas.')}
-      </div>`);
+    const t10 = t20.slice(0,10);
+    if(t10.length) push(`Top 10 clientes de ${M.mes_nombre}`, 'Net Sales facturado en el mes',
+      tabla(['#','Cliente','Ejecutivo','m²','Net Sales'],
+        t10.map((c,i)=>[`<td class="rk">${i+1}</td>`, c.name, `<td class="ejec">${c.ejec}</td>`, nf(c.m2), usd(c.usd)])),
+      'Fuente: cubo de ventas');
   }
 
   return S;
 }
 
 /* ---------- capitulo 4 · Sunset ---------- */
+/* Mapa editable: ejecutivo de cada cuenta Big Bet.
+   Las Big Bets no traen el ejecutivo en la base (DATA.ss.bigbets no tiene ese
+   campo), asi que se completa a mano acá. Clave = nombre exacto de la cuenta tal
+   como figura en con_datos. Lo no listado sale como '—'. */
+const BB_EJEC = {
+  'Las Churras':'Manuel Suero',
+  'Kaplo Cortinas':'Blas Frigerio',
+  'Casa Mia':'Blas Frigerio',
+  'Degrade Home Deco':'Blas Frigerio',
+  'Quildecors':'Blas Frigerio',
+};
+
 function slidesSS(){
   const D = DATA.ss || {}, S = [];
-  const c = D.cards||{};
-  const ritmoTxt = `día hábil ${M.dia_habil} de ${M.dias_habiles} · ${Math.round(RITMO*100)}% del mes`;
   const push = (t,s,body,foot)=>S.push({t,s,body,foot});
-  const SEGS = D.segs4 || ['A','B','C','NUEVO'];
+  const t20 = D.top20 || [];
 
-  push('', '', cover('Sunset', 'Seguimiento de marca · objetivo YTG, activación de cartera y Big Bets'));
+  // 0 · portada
+  push('', '', cover('Sunset', 'Seguimiento de marca'));
 
-  // 1 · movimiento de la semana
+  // 1 · Big Bets · podio de las cuentas a capturar (con ejecutivo)
   {
-    const d = D.deltas||{}, v=d.ventana||{}, t=d.total||{}, o=d.obj||{};
-    push('El movimiento de la semana', `Del ${v.sem_ini||'—'} al ${v.sem_fin||'—'} contra la semana anterior`,
-      cards([
-        card('USD de la semana', usd(t.usd_sem), `${sgn(t.usd_sem_delta)} vs. semana anterior`, null, null),
-        card('Objetivo semanal', usd(o.usd_sem), `${Math.round(pc(t.usd_sem,o.usd_sem))}% cumplido`, pc(t.usd_sem,o.usd_sem), nlPace(pc(t.usd_sem,o.usd_sem))),
-        card('Clientes con compra', nf(t.cli_sem), `${sgn(t.cli_sem_delta)} vs. semana anterior`),
-        card('Big Bets activas', `${nf(d.bb_mes?.compraron)} <small>de ${nf(d.bb_mes?.total)}</small>`, 'cuentas objetivo que compraron'),
-      ],4));
+    const bb = (D.bigbets?.con_datos||[])
+      .filter(b=>b.usd26>0)
+      .sort((a,b)=>b.usd26-a.usd26)
+      .slice(0,3)
+      .map(b=>({nombre:b.nombre, ejec:(BB_EJEC[b.nombre] || 'Por asignar'), valor:usd(b.usd26)}));
+    if(bb.length) push('Big Bets · las cuentas a capturar', 'Las tres cuentas objetivo con más facturación en 2026',
+      podioNL(bb), 'Fuente: cubo de ventas · USD 2026 acumulado');
   }
 
-  // 2 · el mes
+  // 2 · top 10 con ejecutivo
   {
-    const p = c.mes_pct_total||0;
-    push(`El mes de ${c.mes_nombre||M.mes_nombre}`, ritmoTxt,
-      hero(`${Math.round(p)}<small>%</small>`, 'del objetivo mensual, con el mes transcurrido en '+Math.round(RITMO*100)+'%',
-        [['Real', usd(c.mes_real)], ['Objetivo mes', usd(c.mes_obj_full)],
-         ['A la fecha', usd(c.mes_obj_alafecha), nlPace(p)]]),
-      'Fuente: order entry · USD brutos de pedido');
-  }
-
-  // 3 · acumulado semestre
-  push('Acumulado del semestre', 'Julio a hoy contra el objetivo YTG completo',
-    hero(usd(c.acum_real), `equivale al ${nf(c.acum_vs_ytg_pct,1)}% del YTG de ${usd(D.ytgTotal?.obj)}`,
-      [['Base', usd(D.ytgTotal?.base)], ['Delta a buscar', usd(D.ytgTotal?.delta), 'var(--nl-accent-dk)']]));
-
-  // 4 · YTG por grupo
-  {
-    const rows = (D.ytg||[]).filter(r=>r.obj>0).slice(0,9);
-    const max = Math.max(...rows.map(r=>r.obj))||1;
-    push('Objetivo YTG por familia', 'Los pilares marcados son donde se juega el delta',
-      bars(rows.map(r=>bar(r.g, r.pilar?'pilar':null, r.obj/max*100, usd(r.base)+' base', usd(r.obj),
-        r.pilar?'var(--nl-accent-dk)':'var(--nl-grey)'))));
-  }
-
-  // 5 · pilares del mes
-  {
-    // Ojo con las unidades: fam_mes marca es_u en las familias que se miden en
-    // piezas (toldos). Comparar sus USD contra un objetivo en unidades da
-    // porcentajes absurdos, asi que cada familia se compara consigo misma.
-    const rp = D.realPilar||{}, fm = D.fam_mes||{}, idx=(M.mes||8)-7;
-    const l = Object.keys(rp).map(k=>{
-      const f = fm[k]||{}, esU = !!f.es_u;
-      const obj  = (f.obj||[])[idx]||0;
-      const real = esU ? ((f.real||[])[idx]||0) : (rp[k]||0);
-      const fmt  = esU ? (v=>nf(v)+' u.') : usd;
-      const p = pc(real,obj);
-      return bar(k, null, Math.min(100,p), `${fmt(real)} de ${fmt(obj)}`, Math.round(p)+'%', nlPace(p), RITMO*100);
-    });
-    push('Los tres pilares en el mes', 'Roller, tradicional y toldos contra el objetivo mensual',
-      bars(l), 'La línea vertical marca dónde deberíamos estar hoy');
-  }
-
-  // 6 · net sales mes a mes
-  {
-    const ns = D.net_sales_mes||{};
-    push('Net Sales del semestre', 'Objetivo mensual contra pedidos reales',
-      meses(ns.meses||['Jul','Ago','Sep','Oct','Nov','Dic'], ns.obj||[], clip(ns.real, IDX_MES), usd, IDX_MES));
-  }
-
-  // 7 · trade-off
-  {
-    const t = D.insights?.tradeoff||{};
-    push('Más clientes, menos precio', 'El trade-off que define el año',
-      cards([
-        card('Clientes', sgn(t.cli_pct)+'%', `${nf(t.cli25)} → ${nf(t.cli26)} cuentas`),
-        card('Metros²', sgn(t.m2_pct)+'%', 'volumen colocado'),
-        card('USD', sgn(t.usd_pct)+'%', 'facturación total'),
-        card('Precio/m²', sgn(t.p_pct)+'%', `${nf(t.p25)} → ${nf(t.p26)} USD/m²`),
-      ],4),
-      'Entraron más clientes y más metros, pero el precio cayó más rápido: la facturación no acompaña');
-  }
-
-  // 8 · elasticidad por cluster
-  {
-    const cl = D.insights?.elast_total||D.insights?.cluster||[];
-    push('Elasticidad por segmento', 'Qué pasó con precio, metros y facturación en cada cluster',
-      tabla(['Segmento','USD 2026','USD/m²','Δ precio','Δ m²','Acción'],
-        cl.map(x=>[x.cl, usd(x.usd26), nf(x.p26,1),
-          `<span style="color:${nlDelta(x.dp)}">${sgn(x.dp)}%</span>`,
-          `<span style="color:${nlDelta(x.dm)}">${sgn(x.dm)}%</span>`,
-          `<span style="font-weight:600;color:var(--nl-slate)">${x.accion||''}</span>`])));
-  }
-
-  // 9-12 · activacion de cartera por segmento
-  SEGS.forEach(seg=>{
-    const ac = D.activacion_cartera||{};
-    const fams = Object.keys(ac);
-    if(!fams.length) return;
-    const tot = ac[fams[0]]?.[seg]?.total_cartera||0;
-    const l = fams.map(f=>{
-      const d = ac[f]?.[seg]||{};
-      return bar(f, null, pc(d.act_h2,tot), `${nf(d.act_h2)} de ${nf(tot)} cuentas`,
-        Math.round(pc(d.act_h2,tot))+'%');
-    });
-    push(`Cartera · segmento ${seg}`, `${nf(tot)} cuentas en el segmento · activadas en el semestre`,
-      bars(l), 'Activada = con al menos un pedido de esa familia en el semestre');
-  });
-
-  // 13 · resumen ABC del mes
-  {
-    const ab = D.abc_mes||{};
-    const ks = Object.keys(ab);
-    if(ks.length) push(`Cartera en ${M.mes_nombre}`, 'Compradores del mes sobre el total de cada segmento',
-      cards(ks.map(k=>{
-        const d = ab[k];
-        return card(`Segmento ${k}`, `${nf(d.compradores)} <small>de ${nf(d.total)}</small>`,
-          `${usd(d.usd_mes)} · faltan ${nf(d.gap)}`, d.pct, nlPace(d.pct));
-      }), ks.length));
-  }
-
-  // 14 · toldos tracker
-  {
-    const t = D.toldos_track||{};
-    push('Toldos · unidades del semestre', `Objetivo ${nf(t.obj_total)} unidades entre julio y diciembre`,
-      meses(t.meses||['Jul','Ago','Sep','Oct','Nov','Dic'], t.obj_mensual||[], clip(t.real_mensual, IDX_MES), v=>nf(v)+' u.', IDX_MES));
-  }
-
-  // 15 · descuento por familia
-  {
-    const df = D.desc_fam_mes||{}, fams=Object.keys(df);
-    if(fams.length){
-      const idx = (M.mes||8)-7;
-      const filas = [];
-      fams.forEach(f=>{
-        const s = df[f].serie||{};
-        filas.push([f, ...SEGS.map(g=>{
-          const v = (s[g]||[])[idx];
-          return v==null ? '—' : nf(v,1)+'%';
-        }), nf((df[f].total||[])[idx],1)+'%']);
-      });
-      push('Descuento promedio por familia', `${M.mes_nombre} · descuento total sobre lista, por segmento`,
-        tabla(['Familia',...SEGS,'Total'], filas),
-        'El segmento C y los clientes nuevos entran con el descuento más alto');
-    }
-  }
-
-  // 16 · clientes viejos vs nuevos
-  {
-    const cm = D.cli_mes||{}, fams=Object.keys(cm);
-    if(fams.length){
-      const idx=(M.mes||8)-7;
-      push('Clientes del mes por familia', 'Cuentas que ya compraban contra cuentas nuevas',
-        cards(fams.map(f=>{
-          const d=cm[f], v=(d.viejos||[])[idx]||0, n=(d.nuevos||[])[idx]||0;
-          return card(f, nf(v+n), `${nf(v)} recurrentes · ${nf(n)} nuevos`, pc(n,v+n), 'var(--nl-accent-dk)');
-        }), fams.length),
-        'La barra naranja es la proporción de clientes nuevos');
-    }
-  }
-
-  // 17 · big bets
-  {
-    const bb = (D.bigbets?.con_datos||[]).slice(0,10);
-    if(bb.length) push('Big Bets · las cuentas a capturar', 'Cuentas objetivo con actividad registrada en 2026',
-      tabla(['Cuenta','Alta','USD 2026','m²','Meses','Último'],
-        bb.map(b=>[b.nombre, (b.fecha_alta||'').slice(0,7), usd(b.usd26), nf(b.m226),
-          `<span class="pill ${b.n_meses>=3?'ok':'nt'}">${nf(b.n_meses)}</span>`, b.ult_mes||'—'])));
-  }
-
-  // 18 · big bets del mes
-  {
-    const d = D.deltas?.bb_mes||{}, e = D.bigbets?.embudo||{};
-    push('Big Bets · estado del mes', 'Cuántas de las cuentas objetivo compraron',
-      `<div class="nl-two">
-        ${cards([card('Compraron este mes', `${nf(d.compraron)} <small>de ${nf(d.total)}</small>`,
-                  'cuentas Big Bet con pedido', pc(d.compraron,d.total), nlPace(pc(d.compraron,d.total)))],1)}
-        ${nota('Una Big Bet cuenta como capturada cuando compra <b>tres meses seguidos</b> con ticket promedio sobre el mínimo. Una compra suelta no alcanza.')}
-      </div>`);
-  }
-
-  // 19 · top clientes
-  {
-    const t20 = (D.top20||[]).slice(0,12);
-    if(t20.length) push(`Top clientes de ${M.mes_nombre}`, 'Net Sales facturado en el mes · fuente cubo de ventas',
-      tabla(['Cliente','Ejecutivo','m²','Net Sales','Share'],
-        t20.map(x=>[x.name, x.ejec, nf(x.m2), usd(x.usd), nf(x.share,1)+'%'])));
-  }
-
-  // 20 · cierre
-  {
-    const rm = D.resumen_mes||{};
-    push('El foco de esta semana', `${M.mes_nombre} · ${ritmoTxt}`,
-      `<div class="nl-two">
-        ${cards([card('Mes en curso', usd(rm.usd), `${nf(rm.clientes)} clientes con compra`),
-                 card('Big Bets', nf(rm.bigbets), 'cuentas objetivo activas')],2)}
-        ${nota('Tres palancas: subir <b>precio en el segmento A</b>, activar la <b>cartera C y nuevos</b> con frecuencia, y sostener las <b>Big Bets</b> tres meses seguidos.')}
-      </div>`);
+    const t10 = t20.slice(0,10);
+    if(t10.length) push(`Top 10 clientes de ${M.mes_nombre}`, 'Net Sales facturado en el mes',
+      tabla(['#','Cliente','Ejecutivo','m²','Net Sales'],
+        t10.map((x,i)=>[`<td class="rk">${i+1}</td>`, x.name, `<td class="ejec">${x.ejec}</td>`, nf(x.m2), usd(x.usd)])),
+      'Fuente: cubo de ventas');
   }
 
   return S;

@@ -541,12 +541,13 @@ const OBJETIVOS = {
 /* ===== OBJETIVOS:END ===== */
 
 /* ===== CUMPLES:START =====
-   Se cargan a mano, un mes por vez. El mes se declara aca y no se toma de las
-   bases: los cumples de septiembre se muestran durante septiembre, aunque el
-   corte de datos siga siendo de agosto. */
+   Cumpleaños por mes, cargados a mano. La clave es el numero de mes.
+   La diapositiva elige el mes segun la FECHA DE HOY del equipo, no segun el
+   corte de los datos: los cumples son del calendario, y el cubo suele venir uno
+   o dos dias atrasado. Asi el 1 de cada mes cambia sola y no hay que editar
+   nada. Un mes sin gente cargada saca la diapositiva de la rotacion. */
 const CUMPLES = {
-  mes: 'septiembre',
-  gente: [
+  9: [
     {dia: 1,  nombre: 'Sebastián Romero',          area: 'Comercial WCP'},
     {dia: 2,  nombre: 'Carolina Piatti',           area: 'Comercial WCP'},
     {dia: 2,  nombre: 'Viviana Hernandez',         area: 'Operaciones'},
@@ -558,11 +559,27 @@ const CUMPLES = {
     {dia: 27, nombre: 'Lorena Martins',            area: 'People'},
     {dia: 29, nombre: 'Mateo Cristobal',           area: 'Comercial WCP'},
   ],
+  10: [
+    {dia: 20, nombre: 'Santiago Raposeiras',       area: 'Operaciones'},
+    {dia: 28, nombre: 'Christian Branda',          area: 'Operaciones'},
+  ],
+  11: [
+    {dia: 5,  nombre: 'Nicolas Amaya',             area: 'Operaciones'},
+    {dia: 7,  nombre: 'Ramiro Reguera',            area: 'Operaciones'},
+    {dia: 16, nombre: 'Agustín Ávila',             area: 'Operaciones'},
+    {dia: 19, nombre: 'Javier Fleitas',            area: 'Operaciones'},
+    {dia: 28, nombre: 'Fabio Soto',                area: 'Operaciones'},
+  ],
+  12: [
+    {dia: 8,  nombre: 'Jorge Aguilera',            area: 'Operaciones'},
+    {dia: 19, nombre: 'Hernan Luna',               area: 'Operaciones'},
+    {dia: 21, nombre: 'Tobias Villalba',           area: 'Operaciones'},
+  ],
 };
 /* ===== CUMPLES:END ===== */
 
 /* ===== DATA:START ===== */
-const DATA = {"h2":{"total":{"real":458.6,"obj":1175.1},"marcas":[{"name":"Hunter Douglas","obj":891.2,"real":357.7},{"name":"D4M · Sunset","obj":283.9,"real":101.0}],"ejec":[{"name":"Blas Frigerio","marca":"D4M","obj":25.6,"real":12.1},{"name":"Juan Luna","marca":"D4M","obj":198.0,"real":68.1},{"name":"Manuel Suero","marca":"D4M","obj":60.4,"real":20.5},{"name":"Gisela Bosch","marca":"HD","obj":218.8,"real":65.6},{"name":"Rocío Oliva","marca":"HD","obj":223.4,"real":59.2},{"name":"Iván Caderosso","marca":"HD","obj":223.8,"real":124.2}],"rank_prev":[{"name":"Blas Frigerio","marca":"Sunset","pct":3.1},{"name":"Iván Caderosso","marca":"Hunter Douglas","pct":-9.0},{"name":"Rocío Oliva","marca":"Hunter Douglas","pct":-11.3},{"name":"Juan Luna","marca":"Sunset","pct":-21.4},{"name":"Manuel Suero","marca":"Sunset","pct":-23.5},{"name":"Gisela Bosch","marca":"Hunter Douglas","pct":-28.5}],"mes_ranking":"agosto","ns_pais":458642,"ns_hd":357682,"ns_ss":100961,"ns_ss_puro":99472},"hd":{"top20":[{"name":"DARLUX DESIGN CENTER S.R.L.","ejec":"Ezequiel Escobar","m2":425,"usd":40281},{"name":"SOHO INTERIORES SRL","ejec":"Ivan Caderosso","m2":598,"usd":30308},{"name":"L & A SA","ejec":"Ivan Caderosso","m2":451,"usd":21594},{"name":"JANELAS SRL","ejec":"Gisela Bosch","m2":268,"usd":20914},{"name":"ELEMENTOS ARQUITECTONICOS SRL","ejec":"Ivan Caderosso","m2":159,"usd":20208},{"name":"SPIN JORGE ROBERTO","ejec":"Manuel Suero","m2":36,"usd":19964},{"name":"CERRINI ALEJANDRA","ejec":"Ivan Caderosso","m2":167,"usd":17327},{"name":"LA LUCIA S.R.L.","ejec":"Rocio Oliva","m2":146,"usd":16555},{"name":"SOLUCIONES CONSTRUCTIVAS SRL","ejec":"Rocio Oliva","m2":383,"usd":15947},{"name":"Mobiliarte Industrial y Comercial S.R.L","ejec":"Ezequiel Escobar","m2":182,"usd":13666},{"name":"SCHNIPER FERNANDO MARTIN","ejec":"Ivan Caderosso","m2":118,"usd":12635},{"name":"ARTEPLANO SA","ejec":"Ezequiel Escobar","m2":161,"usd":11369},{"name":"PERSIANAS ANDINAS LTDA","ejec":"Sin ejecutivo asignado","m2":0,"usd":11055},{"name":"BLB HOME S.A.","ejec":"Gisela Bosch","m2":144,"usd":10146},{"name":"MARENGO MARINA","ejec":"Rocio Oliva","m2":129,"usd":9445},{"name":"OLD SERVICE SRL","ejec":"Ivan Caderosso","m2":75,"usd":8904},{"name":"DRAPE S.R.L.","ejec":"Ivan Caderosso","m2":97,"usd":5811},{"name":"STACIUK CARLOS","ejec":"Rocio Oliva","m2":58,"usd":5480},{"name":"REVESTIR S.A.","ejec":"Ezequiel Escobar","m2":63,"usd":4869},{"name":"KAPLOEAN FRANCISCO DANIEL","ejec":"Blas Frigerio","m2":23,"usd":4756}]},"ss":{"top20":[{"name":"DI LELLO FRANCISCO","ejec":"Juan Luna","m2":103,"usd":4268},{"name":"CAMPANA CRISTIAN ANDRES","ejec":"Juan Luna","m2":121,"usd":3859},{"name":"GUNTER DILLENBERGER E HIJOS S.A.","ejec":"Blas Frigerio","m2":159,"usd":3447},{"name":"JOBS DAMIAN CARLOS MARIA","ejec":"Juan Luna","m2":100,"usd":3214},{"name":"DRAPE DESING SRL","ejec":"Juan Luna","m2":54,"usd":3033},{"name":"MAZZUCA LUCIANA CELIA","ejec":"Manuel Suero","m2":55,"usd":3028},{"name":"ROUDE GLORIA ALBA","ejec":"Juan Luna","m2":89,"usd":2910},{"name":"MERINO GASTON AGUSTIN","ejec":"Juan Luna","m2":84,"usd":2874},{"name":"BRAIDA MAURO SEBASTIAN","ejec":"Juan Luna","m2":77,"usd":2694},{"name":"UNION CREATIVA SI SRL","ejec":"Blas Frigerio","m2":271,"usd":2589},{"name":"NEGRI FABRINA ANDREA","ejec":"Manuel Suero","m2":28,"usd":2211},{"name":"CALLEGARI CAROLINA ELISABET","ejec":"Juan Luna","m2":64,"usd":2110},{"name":"PEREZ - MENNA S.H.","ejec":"Juan Luna","m2":84,"usd":2038},{"name":"CLAUDIO NORBERTO MARDONES","ejec":"Juan Luna","m2":42,"usd":2037},{"name":"GONZALEZ MARIANO GASTON","ejec":"Juan Luna","m2":72,"usd":1979},{"name":"PLACCI GUSTAVO FABIAN","ejec":"Juan Luna","m2":22,"usd":1963},{"name":"MAS DANIEL S.Y FERNANDO S.H.","ejec":"Juan Luna","m2":67,"usd":1904},{"name":"CHIODI PEDRO MIGUEL","ejec":"Juan Luna","m2":60,"usd":1772},{"name":"GIRARDI MARTIN EDUARDO","ejec":"Juan Luna","m2":64,"usd":1667},{"name":"ABAROA GONZALO LUIS","ejec":"Juan Luna","m2":60,"usd":1605}],"bigbets":{"con_datos":[{"nombre":"Las Churras","cid":"3878","usd26":22368},{"nombre":"Casa Mia","cid":"3496","usd26":13144},{"nombre":"Kaplo Cortinas","cid":"3933","usd26":9052},{"nombre":"Degrade Home Deco","cid":"3888","usd26":3286},{"nombre":"Quildecors","cid":"3930","usd26":1547},{"nombre":"Keops Decoraciones LK","cid":"3771","usd26":147},{"nombre":"SM Roller","cid":"3812","usd26":4},{"nombre":"Cuqui Najo","cid":"3758","usd26":0},{"nombre":"Concept Deco Argentina","cid":"3750","usd26":4},{"nombre":"Casa Vaz","cid":"3880","usd26":0},{"nombre":"Goyena Design","cid":"3881","usd26":0},{"nombre":"Cortelas","cid":"3872","usd26":0}]}},"inv2x":{"meta":250,"ejec":[{"name":"Juan Luna","real":84,"obj":114},{"name":"Manuel Suero","real":41,"obj":76},{"name":"Blas Frigerio","real":34,"obj":60}],"dias":[{"fecha":"01/09","n":17},{"fecha":"02/09","n":15},{"fecha":"03/09","n":14},{"fecha":"04/09","n":16},{"fecha":"07/09","n":17},{"fecha":"08/09","n":21},{"fecha":"09/09","n":16},{"fecha":"10/09","n":3},{"fecha":"11/09","n":5},{"fecha":"14/09","n":9},{"fecha":"15/09","n":3},{"fecha":"16/09","n":5},{"fecha":"17/09","n":4},{"fecha":"18/09","n":7},{"fecha":"21/09","n":7}],"serie":{"Juan Luna":[12,10,6,8,10,10,11,1,2,4,2,1,1,4,2],"Manuel Suero":[4,4,4,6,4,4,3,1,2,1,1,2,1,1,3],"Blas Frigerio":[1,1,4,2,3,7,2,1,1,4,0,2,2,2,2]}},"meta":{"corte":"21/09/2026","anio":2026,"mes":9,"mes_nombre":"septiembre","dia_habil":15,"dia_habil_oe":15,"dias_habiles":22,"corte_oe":"21/09/2026","generado":"22/09/2026 13:21"}};
+const DATA = {"h2":{"total":{"real":584.0,"obj":1175.1},"marcas":[{"name":"Hunter Douglas","obj":891.2,"real":447.3},{"name":"D4M · Sunset","obj":283.9,"real":136.7}],"ejec":[{"name":"Blas Frigerio","marca":"D4M","obj":25.6,"real":17.9},{"name":"Juan Luna","marca":"D4M","obj":198.0,"real":87.6},{"name":"Manuel Suero","marca":"D4M","obj":60.4,"real":31.0},{"name":"Gisela Bosch","marca":"HD","obj":218.8,"real":89.5},{"name":"Rocío Oliva","marca":"HD","obj":223.4,"real":76.0},{"name":"Iván Caderosso","marca":"HD","obj":223.8,"real":161.0}],"rank_prev":[{"name":"Blas Frigerio","marca":"Sunset","pct":3.1},{"name":"Iván Caderosso","marca":"Hunter Douglas","pct":-9.0},{"name":"Rocío Oliva","marca":"Hunter Douglas","pct":-11.3},{"name":"Juan Luna","marca":"Sunset","pct":-21.4},{"name":"Manuel Suero","marca":"Sunset","pct":-23.5},{"name":"Gisela Bosch","marca":"Hunter Douglas","pct":-28.5}],"mes_ranking":"agosto","ns_pais":584019,"ns_hd":447316,"ns_ss":136702,"ns_ss_puro":134889},"hd":{"top20":[{"name":"DARLUX DESIGN CENTER S.R.L.","ejec":"Ezequiel Escobar","m2":449,"usd":43317},{"name":"SOHO INTERIORES SRL","ejec":"Ivan Caderosso","m2":606,"usd":30540},{"name":"SCHNIPER FERNANDO MARTIN","ejec":"Ivan Caderosso","m2":277,"usd":28225},{"name":"L & A SA","ejec":"Ivan Caderosso","m2":451,"usd":21594},{"name":"JANELAS SRL","ejec":"Gisela Bosch","m2":270,"usd":21238},{"name":"ELEMENTOS ARQUITECTONICOS SRL","ejec":"Ivan Caderosso","m2":177,"usd":21195},{"name":"SPIN JORGE ROBERTO","ejec":"Manuel Suero","m2":36,"usd":19964},{"name":"SOLUCIONES CONSTRUCTIVAS SRL","ejec":"Rocio Oliva","m2":441,"usd":18871},{"name":"ARTEPLANO SA","ejec":"Ezequiel Escobar","m2":202,"usd":17866},{"name":"LA LUCIA S.R.L.","ejec":"Rocio Oliva","m2":160,"usd":17763},{"name":"CERRINI ALEJANDRA","ejec":"Ivan Caderosso","m2":167,"usd":17555},{"name":"BLB HOME S.A.","ejec":"Gisela Bosch","m2":247,"usd":14213},{"name":"Mobiliarte Industrial y Comercial S.R.L","ejec":"Ezequiel Escobar","m2":182,"usd":13666},{"name":"CATALDI MONICA LILIANA","ejec":"Gisela Bosch","m2":114,"usd":11837},{"name":"PERSIANAS ANDINAS LTDA","ejec":"Sin ejecutivo asignado","m2":0,"usd":11055},{"name":"MARENGO MARINA","ejec":"Rocio Oliva","m2":166,"usd":10995},{"name":"OLD SERVICE SRL","ejec":"Ivan Caderosso","m2":81,"usd":8845},{"name":"FEELUZ SMART HOME","ejec":"Ivan Caderosso","m2":139,"usd":8714},{"name":"DRAPE S.R.L.","ejec":"Ivan Caderosso","m2":148,"usd":8062},{"name":"MERCADO MARCELO ALEJANDRO","ejec":"Ivan Caderosso","m2":86,"usd":7879}]},"ss":{"top20":[{"name":"CAMPANA CRISTIAN ANDRES","ejec":"Juan Luna","m2":158,"usd":5051},{"name":"IACCARINO PATRICIA ELSA","ejec":"Manuel Suero","m2":39,"usd":4328},{"name":"DI LELLO FRANCISCO","ejec":"Juan Luna","m2":105,"usd":4322},{"name":"GUNTER DILLENBERGER E HIJOS S.A.","ejec":"Blas Frigerio","m2":209,"usd":3912},{"name":"DRAPE DESING SRL","ejec":"Juan Luna","m2":60,"usd":3593},{"name":"FREIJE SEBASTIAN OSCAR","ejec":"Manuel Suero","m2":102,"usd":3449},{"name":"MAZZUCA LUCIANA CELIA","ejec":"Manuel Suero","m2":60,"usd":3236},{"name":"ROUDE GLORIA ALBA","ejec":"Juan Luna","m2":96,"usd":3222},{"name":"BRAIDA MAURO SEBASTIAN","ejec":"Juan Luna","m2":89,"usd":3083},{"name":"JOBS DAMIAN CARLOS MARIA","ejec":"Juan Luna","m2":102,"usd":3054},{"name":"MERINO GASTON AGUSTIN","ejec":"Juan Luna","m2":84,"usd":2874},{"name":"MAINETTI MARIA LUCIANA","ejec":"Blas Frigerio","m2":70,"usd":2782},{"name":"FLEET SA","ejec":"Juan Luna","m2":61,"usd":2596},{"name":"UNION CREATIVA SI SRL","ejec":"Blas Frigerio","m2":271,"usd":2589},{"name":"PEISKER FEDERICO JOSE","ejec":"Juan Luna","m2":63,"usd":2478},{"name":"BARQUIEL MIGUEL ANGEL.","ejec":"Juan Luna","m2":62,"usd":2289},{"name":"NEGRI FABRINA ANDREA","ejec":"Manuel Suero","m2":28,"usd":2211},{"name":"CLAUDIO NORBERTO MARDONES","ejec":"Juan Luna","m2":45,"usd":2154},{"name":"PEREZ - MENNA S.H.","ejec":"Juan Luna","m2":89,"usd":2121},{"name":"CALLEGARI CAROLINA ELISABET","ejec":"Juan Luna","m2":64,"usd":2110}],"bigbets":{"con_datos":[{"nombre":"Las Churras","cid":"3878","usd26":26695},{"nombre":"Casa Mia","cid":"3496","usd26":13682},{"nombre":"Kaplo Cortinas","cid":"3933","usd26":9052},{"nombre":"Degrade Home Deco","cid":"3888","usd26":3286},{"nombre":"Quildecors","cid":"3930","usd26":2126},{"nombre":"Keops Decoraciones LK","cid":"3771","usd26":147},{"nombre":"SM Roller","cid":"3812","usd26":4},{"nombre":"Cuqui Najo","cid":"3758","usd26":0},{"nombre":"Concept Deco Argentina","cid":"3750","usd26":4},{"nombre":"Casa Vaz","cid":"3880","usd26":0},{"nombre":"Goyena Design","cid":"3881","usd26":0},{"nombre":"Cortelas","cid":"3872","usd26":0}]}},"inv2x":{"meta":250,"ejec":[{"name":"Juan Luna","real":91,"obj":114},{"name":"Manuel Suero","real":46,"obj":76},{"name":"Blas Frigerio","real":41,"obj":60}],"dias":[{"fecha":"01/09","n":17},{"fecha":"02/09","n":15},{"fecha":"03/09","n":14},{"fecha":"04/09","n":16},{"fecha":"07/09","n":17},{"fecha":"08/09","n":21},{"fecha":"09/09","n":16},{"fecha":"10/09","n":3},{"fecha":"11/09","n":5},{"fecha":"14/09","n":9},{"fecha":"15/09","n":3},{"fecha":"16/09","n":5},{"fecha":"17/09","n":4},{"fecha":"18/09","n":7},{"fecha":"21/09","n":7},{"fecha":"22/09","n":5},{"fecha":"23/09","n":7},{"fecha":"24/09","n":7}],"serie":{"Juan Luna":[12,10,6,8,10,10,11,1,2,4,2,1,1,4,2,3,4,0],"Manuel Suero":[4,4,4,6,4,4,3,1,2,1,1,2,1,1,3,1,3,1],"Blas Frigerio":[1,1,4,2,3,7,2,1,1,4,0,2,2,2,2,1,0,6]}},"meta":{"corte":"24/09/2026","anio":2026,"mes":9,"mes_nombre":"septiembre","dia_habil":18,"dia_habil_oe":18,"dias_habiles":22,"corte_oe":"24/09/2026","generado":"25/09/2026 12:27"}};
 /* ===== DATA:END ===== */
 
 /* Adaptadores. El resto del archivo sigue usando estos nombres; todos los
@@ -951,9 +968,12 @@ function textosFijos(){
 }
 
 /* ---------- 15 · cumpleanos del mes ---------- */
+const MESES_NOM = ['enero','febrero','marzo','abril','mayo','junio','julio',
+                   'agosto','septiembre','octubre','noviembre','diciembre'];
 function montarCumples(){
   const el = document.getElementById('cumples');
-  const g  = (CUMPLES?.gente || []).slice().sort((a,b)=>a.dia-b.dia);
+  const hoy = new Date().getMonth() + 1;         // mes del calendario, no del corte
+  const g  = (CUMPLES?.[hoy] || []).slice().sort((a,b)=>a.dia-b.dia);
   if(!g.length){ el.remove(); return; }          // sin datos, la diapositiva no existe
   const grid = document.getElementById('cgrid');
   grid.style.setProperty('--cfilas', Math.ceil(g.length/2));   // reparte en 2 columnas
@@ -961,9 +981,9 @@ function montarCumples(){
     `<div class="crow"><div class="cday">${p.dia}</div>`+
     `<div class="cinfo"><div class="cname">${p.nombre}</div>`+
     `<div class="carea">${p.area||''}</div></div></div>`).join('');
-  const mes = CUMPLES.mes || '';
+  const mes = MESES_NOM[hoy - 1];
   document.getElementById('cumples-sub').textContent =
-    mes ? mes.charAt(0).toUpperCase()+mes.slice(1) : '';
+    mes.charAt(0).toUpperCase() + mes.slice(1);
   document.getElementById('cumples-foot').textContent =
     `${g.length} cumpleaños este mes · ¡que los cumplas feliz!`;
   SL.push('cumples');                            // siempre al final de la rotacion
